@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Netflix | Página Inicial de Design de Interface</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><img src="https://assets.nflxext.com/en_us/layout/ecweb/common/logo-shadow2x.png"></a>
+        <ul class="navegacao">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Séries</a></li>
+            <li><a href="#">Filmes</a></li>
+            <li><a href="#">Bombando</a></li>
+            <li><a href="#">Minha Lista</a></li>
+            <li><a href="#">Navegar por idiomas</a></li>
+        </ul>
+        <div class="busca">
+            <input type="text" placeholder="Buscar">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+    </header>
+    <div class="banner">
+        <img src="https://occ-0-2594-185.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABQDi4mtw69Loz_KJStYLNI9MCIy2VrpA1P8v403WynlTEPGcjqvQ0-kixeIb9N6ZhvfkM2gPdsA1h3Eg1Lv4NEZsALqN4RTIbm6y.webp?r=d7e" class="bg">
+        <div class="conteudo">
+            <img src="https://occ-0-2594-185.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABeaDI_pRuTA0DjoKfAp40rYRUW8U5Lt4kRrFpY5rdGPJP9wjg2V_PaJeK3WmQ14hVoRx9D2IAppl56eChlR84TIxqGCM1sOYmUmOAY_A3pComg70y3lnsL2__W9JCgCzK83jTFZFNZKOK0X0TRw8odlS7BLBUFykmdQYNiCQ_c4Ye9UNwVyx-w.webp?r=362" class="tituloFilme">
+            <h4>
+                <span>2023</span>
+                <span><i>16+</i></span>
+                <span>3 partes</span>
+                <span>Ação/Fantasia</span>
+            </h4>
+            <p>Sem suportar o sofrimento de viver escondido, longe da esposa e do filho, Assane decide voltar a Paris com uma proposta ousada para a família: ir embora da França e começar uma vida nova em outro país. Mas os fantasmas do passado estão sempre por perto, e o retorno de uma pessoa inesperada pode acabar com os planos dele.</p>
+            <div class="botoes">
+                <a href="#"><i class="fa fa-play" aria-hidden="true"></i> Assistir</a>
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> Minha Lista</a>
+            </div>
+        </div>
+        <a class="assistir" onclick="alternarVideo();"><img src="play.png">Ver Trailer</a>
+    </div>
+
+    <div class="trailer">
+        <iframe width="1280" height="720" src="https://www.youtube.com/embed/KE3xRiT7mdE?si=xty7deuV7Xo0tuj9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <img src="fechar.png" class="fechar" onclick="alternarVideo();">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
